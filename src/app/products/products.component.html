@@ -1,0 +1,12 @@
+
+<div class="card">
+  <img [src]="imagePath" alt="Denim Jeans" style="width:100%">
+  <h1>{{productName}}</h1>
+  <p class="price">${{price}}</p>
+   <app-product-description></app-product-description>
+   
+  <button (click)="pushToCart()" >Add to Cart</button>
+  <!-- <button [disabled]="is_avaliable" (click)="pushToCart()" >Add to Cart</button> -->
+  <!-- <button disabled="false" (click)="printData()" >Add to Cart</button> -->
+</div>
+<input type="text" (keydown)="printData($event)">
